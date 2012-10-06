@@ -1,5 +1,6 @@
 include_recipe "python::default"
 include_recipe "gunicorn::default"
+include_recipe "elasticsearch::default"
 
 %w{emacs git-core rlwrap openjdk-6-jdk tmux curl tree unzip nginx}.each do |pkg|
   package pkg do
